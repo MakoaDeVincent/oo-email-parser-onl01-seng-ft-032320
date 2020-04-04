@@ -16,8 +16,8 @@ require 'pry'
   end
 
   def parse
-    emails = @@email_addresses.gsub(", ", " ").split
-    emails.uniq 
+    email_address = @@email_addresses.gsub(", ", " ").split
+    email_address.uniq
   end
 
 end
