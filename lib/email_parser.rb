@@ -6,7 +6,7 @@
 
   attr_accessor :emails
 
-  def inititialize(emails)
+  def inititialize
     @emails = emails
   end
 
