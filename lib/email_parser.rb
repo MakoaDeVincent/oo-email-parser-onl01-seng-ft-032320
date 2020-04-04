@@ -15,7 +15,7 @@ require 'pry'
   def parse
     binding.pry
     email_address = emails.split
-    email_address = 
+    email_address =
   end
 
 end
