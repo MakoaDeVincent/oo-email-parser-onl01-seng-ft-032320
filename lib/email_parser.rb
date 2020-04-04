@@ -6,18 +6,14 @@ require 'pry'
 
  class EmailAddressParser
 
-   @@email_addresses = []
-
   attr_accessor :emails
 
   def inititialize(emails)
     @emails = emails
-    @@email_addresses << emails
   end
 
   def parse
-    email_address = @@email_addresses.gsub(", ", " ").split
-    email_address.uniq
+    emails.split(', ').reject { |email| email.empty? }.uniq
   end
 
 end
